@@ -6,7 +6,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors())
-mongoose.connect('mongodb+srv://admin:test1234@cluster0.u7yzp.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('dummy')
 mongoose.connection.once('open', () => {
   console.log('connected')
 })
